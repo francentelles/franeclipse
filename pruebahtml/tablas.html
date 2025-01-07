@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" name>
+        <title>Tablas en HTML</title>
+        <style>
+           footer {
+            text-align: center;
+            padding: 1.5px;
+            background-color: #333;
+            color: rgb(248, 167, 167);
+            position: sticky;
+            width: 100%;
+            bottom: 0;
+        }
+        </style>
+    </head>
+    <body>
+        <h1>Indice</h1>
+    <ul>
+        <p><li><a href="indice.html">Indice</a></p>
+        <p><li><a href="inicio.html">Inicio</a></p>
+        <p><li><a href="listas.html">Listas</a></p>
+        <p><li><a href="tablas.html">Tablas</a></p>
+        <p><li><a href="formulario.html">Formulario</a></p>
+    </ul>
+    <hr>
+<h1>Ejemplo te tablas en HTML</h1>
+    
+    <table width="75%" cellspacing="10px" cellpading="10px" border="1px">
+        <thead>
+        <caption>Muestra las principales etiquetas multimedia</caption>
+        <tr>
+            <td colspan="3"><a href="https://www.um.es/docencia/barzana/DAWEB/2017-18/daweb-tema-5-multimedia-en-html.html">web de Multimedia en HTML</a></td>
+        </tr>
+        <tr>
+            <th>imagenes</td>
+            <th>videos</td>
+            <th>sonido</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td> 
+            <figure>
+                <figcaption>formatos de imagenes</figcaption>
+                <img src="formato-imagenes.png" width="300px">
+                
+            </figure>
+            <picture>
+                <source srcset="formato-imagenes.png">
+                <source srcset="formato-imagenes.jpeg" type="images/jpeg">
+                
+            </picture>
+            </td>
+
+            <td rowspan="2">
+                <video autoplay="autoplay" controls="controls">
+                    <source src="video.mp4" type="video/mp4;"><source>
+                </video>
+            </td>
+            <td rowspan="2">
+                <audio autoplay="autoplay" controls="controls">
+                    <source src="audio.mp3" type="audio/mp3"><source>
+                </audio>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <img src="formatos-imagenes.png" width="300px">
+            </td>
+        </tr>
+        <tr>
+            <td>&lt;img&gt;&lt;figure&gt;&lt;picture&gt;</td>
+            <td>&lt;video src="video.mp4"&gt;</td>
+            <td>&lt;audio src="audio.mp3"&gt;</td>
+        </tr>
+    </tbody>
+    </table>
+    <br><br>
+    <footer>
+        <p>&copy; 2024 - Fran Centelles</p>
+    </footer>
+</body>
+</html>

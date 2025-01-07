@@ -1,0 +1,28 @@
+.par{
+    color:red
+}
+
+.impar{
+    color:yellow;
+}
+abbr{
+    color:green
+}
+p[lang]{
+    color: yellow;
+}
+p[lang=pt]{
+    color: blue;
+}
+p[lang^=e]{
+    color: violet;
+}
+p[lang$=n]{
+    color: gray;
+}
+div p strong{color: green;
+}
+#primerdiv p strong{font-size: 20px;
+}
+#segundodiv p strong{font-size: 40px;
+}

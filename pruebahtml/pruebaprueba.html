@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Notas del Superior</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        p {
+            line-height: 1.6;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+    <script>
+        window.onload = function(){
+            alert("Has entrado en una pagina protegida por el gobierno");
+        };
+    </script>
+</head>
+<body>
+
+    <header>
+        <h1>Mis Notas del Superior</h1>
+    </header>
+
+    <div class="container">
+        <section id="tema1">
+            <h2>Tema 1: Introducción a la Programación</h2>
+            <p>Aquí puedes añadir el contenido del primer tema. Por ejemplo, los conceptos básicos de programación, algoritmos y estructuras de control.</p>
+        </section>
+
+        <section id="tema2">
+            <h2>Tema 2: HTML y CSS</h2>
+            <p>En este tema, aprenderemos sobre la creación de sitios web con HTML y CSS, incluyendo el uso de etiquetas, estilos y estructura de la página.</p>
+        </section>
+
+        <section id="tema3">
+            <h2>Tema 3: JavaScript Básico</h2>
+            <p>En este tema, se cubren los conceptos básicos de JavaScript, como variables, funciones, eventos y cómo interactuar con el DOM.</p>
+        </section>
+                
+        <div class="container">
+            <button class="accordion">Tema 1: Introducción a la Programación</button>
+            <div class="panel">
+                <p>Aquí se encuentran los conceptos básicos de programación.</p>
+                <a href="material/programacion_basica.pdf" download>Descargar PDF del Tema</a>
+                <iframe src="material/programacion_basica.pdf" width="100%" height="400px"></iframe>
+            </div>
+    
+            <button class="accordion">Tema 2: HTML y CSS</button>
+            <div class="panel">
+                <p>Aquí se encuentran los conceptos básicos de HTML y CSS.</p>
+                <a href="material/html_css.pdf" download>Descargar PDF del Tema</a>
+                <iframe src="material/html_css.pdf" width="100%" height="400px"></iframe>
+            </div>
+
+        <!-- Sigue añadiendo nuevos temas aquí -->
+    </div>
+
+    <footer>
+        <p>&copy; 2024 - Mis Notas del Superior - (Fran Centelles)</p>
+    </footer>
+
+</body>
+</html>

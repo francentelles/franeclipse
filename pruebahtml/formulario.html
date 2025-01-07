@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <style>
+       footer {
+            text-align: center;
+            padding: 1.5px;
+            background-color: #333;
+            color: rgb(248, 167, 167);
+            position: sticky;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Indice</h1>
+    <ul>
+        <p><li><a href="indice.html">Indice</a></p>
+        <p><li><a href="inicio.html">Inicio</a></p>
+        <p><li><a href="listas.html">Listas</a></p>
+        <p><li><a href="tablas.html">Tablas</a></p>
+        <p><li><a href="formulario.html">Formulario</a></p>
+    </ul>
+    <hr>
+    <h2>Rellena tus  datos</h2>
+    <form action="#" method="post">
+        <label for="nombre">Nombre</label><br>
+        <input type="text" id="nombre" name="nombre" required>
+        <br><br>
+        <label for="apellidos">Apellidos</label><br>
+        <input type="text" id="apellidos" name="apellidos" required>
+        <br><br>
+        <label for="contrasena">Contraseña</label><br>
+        <input type="password" id="contrasena" name="contrasena" required>
+        <br><br>
+        <label for="dni">DNI</label><br>
+        <input type="text" id="dni" name="dni" required>
+        <br><br>
+        <label>Sexo</label><br>
+        <input type="radio" id="hombre" name="sexo" value="hombre">
+        <label for="hombre" style="display: inline;">Hombre</label><br>
+        <input type="radio" id="mujer" name="sexo" value="mujer">
+        <label for="mujer" style="display: inline;">Mujer</label>
+        <br><br>
+        <label for="foto">Incluir mi foto</label>
+        <input type="file" id="foto" name="foto">
+        <br><br>
+        <input type="checkbox" id="boletin" name="boletin">
+        <label for="boletin" style="display: inline;">Suscribirme al boletín de novedades</label>
+        <br><br>
+        <div class="buttons">
+            <button type="submit">Guardar cambios</button>&nbsp;
+            <button type="reset">Borrar los datos introducidos</button>
+        </div>
+    </form>
+    <br><hr><br>
+    <form action="#" method="post">
+        
+            <h2>::Formulari de registre al Portal::</h2>
+            <fieldset>
+                <legend>Dades personals</legend>
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" required>
+
+                <label for="cognoms">Cognoms</label>
+                <input type="text" id="cognoms" name="cognoms" required>
+
+                <label for="dni">DNI</label>
+                <input type="text" id="dni" name="dni" placeholder="P.ex: 45987989X" required>
+
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="clau">Clau</label>
+                <input type="password" id="clau" name="clau" required>
+
+                <label for="repeat-clau">Repetir Clau</label>
+                <input type="password" id="repeat-clau" name="repeat-clau" required>
+
+                <label for="email">E-Correu</label>
+                <input type="email" id="email" name="email" placeholder="usuari@domini.org" required>
+
+                <label for="franja-edat">Franja d'edat</label>
+                <select id="franja-edat" name="franja-edat">
+                    <option value="menor-16">Menor que 16 anys</option>
+                    <option value="16-25">16-25 anys</option>
+                    <option value="més-25">Més de 25 anys</option>
+                </select>
+
+                <label>Sexe</label>
+                <input type="radio" id="home" name="sexe" value="home">
+                <label for="home" style="display: inline;">Home</label>
+                <input type="radio" id="dona" name="sexe" value="dona">
+                <label for="dona" style="display: inline;">Dona</label>
+
+                <label for="codi-pais">Codi País</label>
+                <input type="text" id="codi-pais" name="codi-pais" placeholder="Codi del país dos caràct">
+
+                <label for="codi-zip">Codi ZIP</label>
+                <input type="text" id="codi-zip" name="codi-zip" placeholder="El codi postal">
+
+                <label for="imatge">Imatge Personal</label>
+                <input type="file" id="imatge" name="imatge">
+            </fieldset>
+            <br>
+
+            <fieldset>
+                <legend>Altres dades d'interès</legend>
+                <label>Interessos:</label>
+                <input type="checkbox" id="css" name="interessos" value="css">
+                <label for="css" style="display: inline;">CSS</label>
+                <input type="checkbox" id="html5" name="interessos" value="html5">
+                <label for="html5" style="display: inline;">HTML5</label>
+                <input type="checkbox" id="javascript" name="interessos" value="javascript">
+                <label for="javascript" style="display: inline;">Javascript</label>
+
+                <label>Coneixements:</label>
+                <input type="checkbox" id="xarxes" name="coneixements" value="xarxes">
+                <label for="xarxes" style="display: inline;">Xarxes Socials</label>
+                <input type="checkbox" id="html" name="coneixements" value="html">
+                <label for="html" style="display: inline;">Programació HTML</label>
+                <input type="checkbox" id="css-prog" name="coneixements" value="css">
+                <label for="css-prog" style="display: inline;">Programació CSS</label>
+                <input type="checkbox" id="disseny" name="coneixements" value="disseny">
+                <label for="disseny" style="display: inline;">Disseny</label>
+
+                <label for="comentaris">Comentaris:</label>
+                <textarea id="comentaris" name="comentaris" rows="4" placeholder="Aquí disposeu d'espai per escriure"></textarea>
+            </fieldset><br>
+
+            <div class="buttons">
+                <button type="submit">Enviar</button>
+                <button type="reset">Esborrar</button>
+            </div>
+    </form>
+    <br><br>
+    <footer>
+        <p>&copy; 2024 - Fran Centelles</p>
+    </footer>
+</body>
+</html>
